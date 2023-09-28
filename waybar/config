@@ -1,0 +1,142 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+  "modules-left": [
+    // "custom/home",
+    "cpu",
+    "memory",
+    "hyprland/workspaces",
+    "wlr/taskbar",
+    "hyprland/window"
+  ],
+  "modules-center": ["custom/launcher"],
+  "modules-right": [
+    "tray",
+    "network",
+    "backlight",
+    "pulseaudio",
+    "clock",
+    "battery",
+    "custom/power"
+  ],
+
+  "custom/home": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "alacritty"
+  },
+
+  "cpu": {
+    "interval": 30,
+    "format": "{usage}%",
+    "tooltip": false
+    // "on-click": "alacritty -e gotop",
+  },
+
+  "memory": {
+    "interval": 30,
+    "tooltip": false,
+    "format": "{percentage}%"
+    // "on-click": "alacritty -e htop",
+  },
+
+  // Modules configuration
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "active-only": true,
+    "on-click": "activate"
+    //"format": "{icon}",
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "tooltip": false,
+    "all-outputs": "false",
+    "icon-size": 40,
+    "icon-theme": "ePapirus",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": ["Alacritty", "kitty"],
+
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
+  },
+
+  "clock": {
+    "tooltip": false,
+    "interval": 1,
+    "format": "{:%H:%M}"
+  },
+
+  "backlight": {
+    "format": "{icon}{percent}%",
+    "tooltip": false,
+    "format-icons": [" "]
+  },
+
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+  },
+
+  "battery": {
+    "interval": 1,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon}  {capacity}%",
+    "tooltip": false,
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{icon}  {time}",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "tray": {
+    "icon-size": 32,
+    "spacing": 16
+  },
+
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": "",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "tooltip": true,
+    "format-linked": "{ifname} (No IP)  ",
+    "format-disconnected": "󰤮",
+    "on-click": ""
+  },
+
+  "custom/launcher": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "",
+    "on-click-right": ""
+  },
+
+  "custom/power": {
+    "tooltip": false,
+    "format": " ",
+    "on-click": "poweroff",
+    "on-click-right": ""
+  }
+}
