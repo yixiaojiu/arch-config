@@ -1,10 +1,12 @@
 # ArchLinux 配置
 
-## 字体
-
-ttf-jetbrains-mono-nerd
-
 ## 依赖包
+
+### 直接安装
+
+joshuto
+
+字体：ttf-jetbrains-mono-nerd
 
 ### [pulseaudio](https://archlinux.org/packages/?name=pulseaudio)
 
