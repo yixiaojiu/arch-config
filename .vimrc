@@ -4,7 +4,7 @@ syntax on
 set hls
 
 inoremap jj <esc>
-nnoremap H ^
-nnoremap L g_
+noremap H ^
+noremap L g_
 vnoremap H ^
 vnoremap L g_
