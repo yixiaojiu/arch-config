@@ -4,7 +4,7 @@
 
 ### 直接安装
 
-joshuto
+joshuto, lsd, starship
 
 字体：ttf-jetbrains-mono-nerd
 
