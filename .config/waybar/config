@@ -11,15 +11,7 @@
     "hyprland/window"
   ],
   "modules-center": ["custom/launcher"],
-  "modules-right": [
-    "tray",
-    "network",
-    "backlight",
-    "pulseaudio",
-    "clock",
-    "battery",
-    "custom/power"
-  ],
+  "modules-right": ["tray", "network", "backlight", "pulseaudio", "clock", "battery", "custom/power"],
 
   "custom/home": {
     "format": " ",
@@ -70,7 +62,7 @@
     "tooltip": true,
     "interval": 1,
     "format": "{:%H:%M}",
-		"tooltip-format": "{:%Y-%m-%d}"
+    "tooltip-format": "{:%Y-%m-%d}"
   },
 
   "backlight": {
@@ -93,7 +85,7 @@
       "default": ["", ""]
     },
     "scroll-step": 1,
-    "on-click": "pactl set-sink-mute 0 toggle",
+    "on-click": "pactl set-sink-mute 1 toggle",
     "ignored-sinks": ["Easy Effects Sink"]
   },
 
@@ -137,7 +129,7 @@
   "custom/power": {
     "tooltip": false,
     "format": " ",
-    "on-click": "",
+    "on-click": "poweroff",
     "on-click-right": ""
   }
 }

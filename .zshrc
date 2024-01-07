@@ -1,12 +1,12 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 #  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
 alias ls="lsd"
-alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:7890"'
+# alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:7890"'
 
 export QT_WAYLAND_FORCE_DPI=144
 export QT_SCALE_FACTOR=1.5
@@ -23,12 +23,18 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 # export ftp_proxy=$proxy
 export no_proxy="localhost, 127.0.0.1, ::1"
 
-# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/autojump/autojump.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+# starship
 eval "$(starship init zsh)"
+
+# zsh history
+HISTFILE=/home/yixiaojiu/.zsh_history
+HISTSIZE=10000000
+SAVEHIST=10000000
+setopt appendhistory
+setopt INC_APPEND_HISTORY  
+setopt SHARE_HISTORY
+

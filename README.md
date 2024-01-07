@@ -4,7 +4,7 @@
 
 ### 直接安装
 
-joshuto, lsd, starship
+joshuto, lsd, starship, wl-clipboard，sddm
 
 字体：ttf-jetbrains-mono-nerd
 
@@ -26,3 +26,23 @@ pacmd list-sinks | grep -e 'name:' -e 'index:'
 ```
 
 更新 [pulse/default.pa](/pulse/default.pa) 中的输出设备名称
+
+## AUR
+
+- nwg-look-bin：GTK 设置管理
+
+## 配置
+
+### sddm
+
+[sddm 主题](https://github.com/catppuccin/sddm)
+
+依赖
+
+```sh
+pacman -Syu qt5-graphicaleffects qt5-svg qt5-quickcontrols2
+```
+
+将 [sddm.conf](./sddm.conf) 复制到 `/etc/sddm.conf.d ` 文件夹下
+
+将 [catppuccin-frappe](./catppuccin-frappe) 文件夹复制到 `/usr/share/sddm/themes` 文件夹下
