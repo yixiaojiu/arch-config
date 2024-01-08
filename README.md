@@ -4,9 +4,13 @@
 
 ### 直接安装
 
-joshuto, lsd, starship, wl-clipboard，sddm
+joshuto, lsd, starship, wl-clipboard，sddm, slurp, grim, eog, nautilus, mpv, neovim
 
-字体：ttf-jetbrains-mono-nerd
+ttf-jetbrains-mono-nerd
+
+## AUR
+
+- nwg-look-bin：GTK 设置管理
 
 ### [pulseaudio](https://archlinux.org/packages/?name=pulseaudio)
 
@@ -26,10 +30,6 @@ pacmd list-sinks | grep -e 'name:' -e 'index:'
 ```
 
 更新 [pulse/default.pa](/pulse/default.pa) 中的输出设备名称
-
-## AUR
-
-- nwg-look-bin：GTK 设置管理
 
 ## 配置
 
