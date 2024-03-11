@@ -4,7 +4,7 @@
 
 ### 直接安装
 
-joshuto, lsd, starship, wl-clipboard，sddm, slurp, grim, eog, nautilus, mpv, neovim
+joshuto, lsd, starship, wl-clipboard，sddm, slurp, grim, eog, nautilus, mpv, neovim, polkit-gnome, zoxide
 
 ttf-jetbrains-mono-nerd
 

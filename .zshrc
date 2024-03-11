@@ -1,11 +1,12 @@
 alias ls="lsd"
+alias cd="z"
 # alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:7890"'
 
 export QT_WAYLAND_FORCE_DPI=144
 export QT_SCALE_FACTOR=1.5
 export QT_QPA_PLATFORM=wayland
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 eval "$(fnm env --use-on-cd)"
 
@@ -22,6 +23,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # starship
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 # zsh history
 HISTFILE=/home/yixiaojiu/.zsh_history
